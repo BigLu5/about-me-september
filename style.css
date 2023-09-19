@@ -1,12 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
   font-family: "Poppins", sans-serif;
   color: black;
-  line-height: 1;
   letter-spacing: 1.5px;
+}
+
+body {
+  background-color: slategray;
+  margin: 32 px;
+  padding: 32 px;
+}
+
+.leftcolumn {
+  width: 300px;
+  float: left;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 60px;
+  margin-left: 110px;
 }
 
 #topright {
@@ -32,11 +44,4 @@ header {
   text-align: center;
   border: solid black;
   padding: 40px;
-}
-
-.pleft {
-  text-align: left;
-  float: left;
-  margin-right: 20px;
-  min-width: 250px;
 }
