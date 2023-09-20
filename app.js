@@ -10,6 +10,7 @@ if (userName !== null && userName !== "") {
 
   // Create a welcome message
   const welcomeMessage = `Welcome to my website, ${userName}.`;
+  document.write(welcomeMessage);
 
   // Display the welcome message
   alert(welcomeMessage);
