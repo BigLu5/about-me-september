@@ -21,6 +21,14 @@ body {
   margin-left: 110px;
 }
 
+.columntwo {
+  width: 300px;
+  float: right;
+  color: white;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #topright {
   height: 200px;
   width: 300px;
