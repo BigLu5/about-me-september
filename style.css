@@ -12,6 +12,20 @@ body {
   padding: 32 px;
 }
 
+#quiz-container {
+  display: none;
+}
+
+#topright {
+  display: block;
+  border: 5px solid black;
+  margin-left: 40%;
+  margin-right: 40%;
+  max-width: 25%;
+  max-height: 25%;
+  position: relative;
+}
+
 .columnone {
   width: 300px;
   float: left;
@@ -24,16 +38,17 @@ body {
 .columntwo {
   width: 300px;
   float: right;
+  padding-bottom: 300px;
   color: white;
   font-size: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#topright {
-  height: 200px;
-  width: 300px;
-  border: 2px solid burlywood;
-  float: right;
+.columnthree {
+  margin-top: 100px;
+  margin-left: 50px;
+  font-family: 1rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #top-links {
