@@ -27,153 +27,184 @@ function showQuiz() {
     alert("You didn't enter your name! Welcome to my website!");
   }
 
-  let coffee = prompt("Do you drink coffee? please answer yes or no");
-  if (coffee.toLowerCase() === "yes" || coffee.toLowerCase() === "y") {
-    correctAnswersCount++;
+  function coffeeQuestion() {
+    let coffee = prompt("Do you drink coffee? please answer yes or no");
+    if (coffee.toLowerCase() === "yes" || coffee.toLowerCase() === "y") {
+      correctAnswersCount++;
+    }
+
+    console.log(coffee);
+    console.log(coffee.toLowerCase());
+
+    switch (coffee.toLowerCase()) {
+      case "yes":
+      case "y":
+        alert("Me too, it gets me through the day");
+        // console.log("Me too, it gets me through the day");
+        break;
+      case "no":
+      case "n":
+        alert("You should try it");
+        // console.log("You should try it");
+        break;
+      default:
+        alert("It's a simple question");
+      // console.log(`It's a simple question...`);
+    }
   }
 
-  console.log(coffee);
-  console.log(coffee.toLowerCase());
+  coffeeQuestion();
 
-  switch (coffee.toLowerCase()) {
-    case "yes":
-    case "y":
-      alert("Me too, it gets me through the day");
-      // console.log("Me too, it gets me through the day");
-      break;
-    case "no":
-    case "n":
-      alert("You should try it");
-      // console.log("You should try it");
-      break;
-    default:
-      alert("It's a simple question");
-    // console.log(`It's a simple question...`);
+  function skyQuestion() {
+    let sky = prompt("Is the sky blue? please answer yes or no");
+    if (sky.toLowerCase() === "yes" || sky.toLowerCase() === "y") {
+      correctAnswersCount++;
+    }
+
+    console.log(sky);
+    console.log(sky.toLowerCase());
+
+    switch (sky.toLowerCase()) {
+      case "yes":
+      case "y":
+        alert("I agree");
+        // console.log("I agree");
+        break;
+      case "no":
+      case "n":
+        alert("I'm sure there is a reason you're saying this");
+        // console.log("I'm sure there is a reason you're saying this");
+        break;
+      default:
+        alert("It's a simple question");
+      // console.log(`It's a simple question...`);
+    }
   }
 
-  let sky = prompt("Is the sky blue? please answer yes or no");
-  if (sky.toLowerCase() === "yes" || sky.toLowerCase() === "y") {
-    correctAnswersCount++;
+  skyQuestion();
+
+  function ageQuestion() {
+    let ageOfUser = prompt("Are you over 18? please answer yes or no");
+    if (ageOfUser.toLowerCase() === "no" || ageOfUser.toLowerCase() === "n") {
+      correctAnswersCount++;
+    }
+
+    console.log(ageOfUser);
+    console.log(ageOfUser.toLowerCase());
+
+    switch (ageOfUser.toLowerCase()) {
+      case "yes":
+      case "y":
+        alert("depressing isn't it");
+        // console.log("depressing isn't it");
+        break;
+      case "no":
+      case "n":
+        alert("Good for you");
+        // console.log("Good for you");
+        break;
+      default:
+        alert("It's a simple question");
+      // console.log(`It's a simple question...`);
+    }
   }
 
-  console.log(sky);
-  console.log(sky.toLowerCase());
+  ageQuestion();
 
-  switch (sky.toLowerCase()) {
-    case "yes":
-    case "y":
-      alert("I agree");
-      // console.log("I agree");
-      break;
-    case "no":
-    case "n":
-      alert("I'm sure there is a reason you're saying this");
-      // console.log("I'm sure there is a reason you're saying this");
-      break;
-    default:
-      alert("It's a simple question");
-    // console.log(`It's a simple question...`);
-  }
-
-  let ageOfUser = prompt("Are you over 18? please answer yes or no");
-  if (ageOfUser.toLowerCase() === "no" || ageOfUser.toLowerCase() === "n") {
-    correctAnswersCount++;
-  }
-
-  console.log(ageOfUser);
-  console.log(ageOfUser.toLowerCase());
-
-  switch (ageOfUser.toLowerCase()) {
-    case "yes":
-    case "y":
-      alert("depressing isn't it");
-      // console.log("depressing isn't it");
-      break;
-    case "no":
-    case "n":
-      alert("Good for you");
-      // console.log("Good for you");
-      break;
-    default:
-      alert("It's a simple question");
-    // console.log(`It's a simple question...`);
-  }
-
-  let javaScript = prompt(
-    "Is JavaScript a programming language? please answer yes or no"
-  );
-  if (javaScript.toLowerCase() === "yes" || javaScript.toLowerCase() === "y") {
-    correctAnswersCount++;
-  }
-
-  console.log(javaScript);
-  console.log(javaScript.toLowerCase());
-
-  switch (javaScript.toLowerCase()) {
-    case "yes":
-    case "y":
-      alert("Indeed it is");
-      // console.log("Indeed it is");
-      break;
-    case "no":
-    case "n":
-      alert("Take another guess");
-      // console.log("Take another guess");
-      break;
-    default:
-      alert("It's a simple question");
-    // console.log(`It's a simple question...`);
-  }
-
-  let fries = prompt("Would you like fries with that? please answer yes or no");
-  if (fries.toLowerCase() === "no" || fries.toLowerCase() === "n") {
-    correctAnswersCount++;
-  }
-
-  console.log(fries);
-  console.log(fries.toLowerCase());
-
-  switch (fries.toLowerCase()) {
-    case "yes":
-    case "y":
-      alert("Fries is fine but the milkshake machine is broken");
-      // console.log("Fries is fine but the milkshake machine is broken");
-      break;
-    case "no":
-    case "n":
-      alert("Good, too many carbs anyway");
-      // console.log("Good, too many carbs anyway");
-      break;
-    default:
-      alert("It's a simple question");
-    // console.log(`It's a simple question...`);
-  }
-
-  let numberGuess = 8;
-  let maxAttempts = 4;
-  // initialisation; condition; increment
-  for (let i = 1; i <= maxAttempts; i++) {
-    let userGuess = prompt(
-      "I'm thinking of a number between 1 and 10, take a guess"
+  function jsQuestion() {
+    let javaScript = prompt(
+      "Is JavaScript a programming language? please answer yes or no"
     );
-    console.log(userGuess);
-    if (parseInt(userGuess) === numberGuess) {
-      // parseInt(userGuess) converts a string to an integer
-      alert(`Congratulations! you guessed the correct number: ${numberGuess}.`);
-      break; // break will stop the loop if correct answer is guessed
-    } else if (userGuess < numberGuess) {
-      alert("Too low. Try again.");
-    } else {
-      alert("Too high. Try again.");
+    if (
+      javaScript.toLowerCase() === "yes" ||
+      javaScript.toLowerCase() === "y"
+    ) {
+      correctAnswersCount++;
     }
 
-    // check if the user has used their maximum attempts
-    if (i === maxAttempts) {
-      alert(
-        `Sorry, you've used all your attempts. The correct number was ${numberGuess}.`
-      );
+    console.log(javaScript);
+    console.log(javaScript.toLowerCase());
+
+    switch (javaScript.toLowerCase()) {
+      case "yes":
+      case "y":
+        alert("Indeed it is");
+        // console.log("Indeed it is");
+        break;
+      case "no":
+      case "n":
+        alert("Take another guess");
+        // console.log("Take another guess");
+        break;
+      default:
+        alert("It's a simple question");
+      // console.log(`It's a simple question...`);
     }
   }
+
+  jsQuestion();
+
+  function friesQuestion() {
+    let fries = prompt(
+      "Would you like fries with that? please answer yes or no"
+    );
+    if (fries.toLowerCase() === "no" || fries.toLowerCase() === "n") {
+      correctAnswersCount++;
+    }
+
+    console.log(fries);
+    console.log(fries.toLowerCase());
+
+    switch (fries.toLowerCase()) {
+      case "yes":
+      case "y":
+        alert("Fries is fine but the milkshake machine is broken");
+        // console.log("Fries is fine but the milkshake machine is broken");
+        break;
+      case "no":
+      case "n":
+        alert("Good, too many carbs anyway");
+        // console.log("Good, too many carbs anyway");
+        break;
+      default:
+        alert("It's a simple question");
+      // console.log(`It's a simple question...`);
+    }
+  }
+
+  friesQuestion();
+
+  function numberQuestion() {
+    let numberGuess = 8;
+    let maxAttempts = 4;
+    // initialisation; condition; increment
+    for (let i = 1; i <= maxAttempts; i++) {
+      let userGuess = prompt(
+        "I'm thinking of a number between 1 and 10, take a guess"
+      );
+      console.log(userGuess);
+      if (parseInt(userGuess) === numberGuess) {
+        // parseInt(userGuess) converts a string to an integer
+        alert(
+          `Congratulations! you guessed the correct number: ${numberGuess}.`
+        );
+        break; // break will stop the loop if correct answer is guessed
+      } else if (userGuess < numberGuess) {
+        alert("Too low. Try again.");
+      } else {
+        alert("Too high. Try again.");
+      }
+
+      // check if the user has used their maximum attempts
+      if (i === maxAttempts) {
+        alert(
+          `Sorry, you've used all your attempts. The correct number was ${numberGuess}.`
+        );
+      }
+    }
+  }
+
+  numberQuestion();
 
   // i = 1 sets a variable before the loop starts. i effectively represents an 'attempt' from the user?
   // i <= maxAttempts defines the condition for the loop to run (i is less than or equal to 4).
