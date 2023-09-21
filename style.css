@@ -2,12 +2,10 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  color: black;
-  letter-spacing: 1.5px;
 }
 
 body {
-  background-color: slategray;
+  background-color: rgb(255, 255, 255);
   margin: 32 px;
   padding: 32 px;
 }
@@ -17,43 +15,43 @@ body {
 }
 
 #topright {
-  display: block;
-  border: 10px solid black;
-  margin-left: 40%;
-  margin-right: 40%;
-  max-width: 25%;
-  max-height: 25%;
-  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-top: 60px;
 }
 
 .columnone {
   width: 300px;
-  left: 0;
-  color: white;
+  color: black;
   font-size: 1rem;
   margin-bottom: 60px;
   margin-left: 110px;
   background-color: linen;
-  border: solid black;
-  margin: 5px;
+  border-left: solid black;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .columntwo {
   width: 300px;
-  float: right;
   padding-bottom: 10px;
-  color: white;
+  color: black;
   font-size: 1rem;
   background-color: linen;
-  border: solid black;
-  margin: 5px;
+  border-left: solid black;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .columnthree {
   margin-top: 100px;
   margin-left: 50px;
   font-family: 1rem;
-  color: white;
+  color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -64,6 +62,10 @@ body {
   list-style: none;
 }
 
+a {
+  color: white;
+}
+
 #top-links li {
   display: inline;
   margin-right: 10px; /* Add some space between links */
@@ -71,6 +73,10 @@ body {
 
 header {
   text-align: center;
-  border: solid black;
-  padding: 40px;
+  background-color: #383d42;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  letter-spacing: 3px;
+  margin: 10px;
 }
