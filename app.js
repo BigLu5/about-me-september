@@ -179,37 +179,43 @@ function showQuiz() {
   // i <= maxAttempts defines the condition for the loop to run (i is less than or equal to 4).
   // i++ increases a value (i++) each time the code block in the loop has been executed.
 
-  // Array of possible correct answers
-  const correctAnswers = ["apple", "banana", "cherry", "grape", "orange"];
+  function arrayQuestion() {
+    // Array of possible correct answers
+    const correctAnswers = ["apple", "banana", "cherry", "grape", "orange"];
 
-  // Maximum number of attempts allowed
-  const maxGuess = 6;
+    // Maximum number of attempts allowed
+    const maxGuess = 6;
 
-  // Flag to track if the user guessed correctly
-  let guessedCorrectly = false;
+    // Flag to track if the user guessed correctly
+    let guessedCorrectly = false;
 
-  for (let attempt = 1; attempt <= maxGuess; attempt++) {
-    // Prompt the user for their guess
-    const userInput = prompt(`Attempt ${attempt}/${maxGuess}: Guess a fruit:`);
-
-    // Check if the user's guess is one of the correct answers
-    if (correctAnswers.includes(userInput.toLowerCase())) {
-      guessedCorrectly = true;
-      alert("Congratulations! You guessed correctly.");
-      break; // Exit the loop if the guess is correct
-    } else {
-      alert("Incorrect guess. Try again.");
-    }
-
-    // Check if the user has exhausted all attempts
-    if (attempt === maxGuess) {
-      alert(
-        `Sorry, you've used all your attempts. The correct answers were: ${correctAnswers.join(
-          ", "
-        )}.`
+    for (let attempt = 1; attempt <= maxGuess; attempt++) {
+      // Prompt the user for their guess
+      const userInput = prompt(
+        `Attempt ${attempt}/${maxGuess}: Guess a fruit:`
       );
+
+      // Check if the user's guess is one of the correct answers
+      if (correctAnswers.includes(userInput.toLowerCase())) {
+        guessedCorrectly = true;
+        alert("Congratulations! You guessed correctly.");
+        break; // Exit the loop if the guess is correct
+      } else {
+        alert("Incorrect guess. Try again.");
+      }
+
+      // Check if the user has exhausted all attempts
+      if (attempt === maxGuess) {
+        alert(
+          `Sorry, you've used all your attempts. The correct answers were: ${correctAnswers.join(
+            ", "
+          )}.`
+        );
+      }
     }
   }
+
+  arrayQuestion();
 
   alert(
     `Thank you, ${userName}! You got ${correctAnswersCount} out of 7 questions correct.`
