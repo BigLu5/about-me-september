@@ -18,7 +18,7 @@ body {
 
 #topright {
   display: block;
-  border: 5px solid black;
+  border: 10px solid black;
   margin-left: 40%;
   margin-right: 40%;
   max-width: 25%;
@@ -28,19 +28,25 @@ body {
 
 .columnone {
   width: 300px;
-  float: left;
+  left: 0;
   color: white;
   font-size: 1rem;
   margin-bottom: 60px;
   margin-left: 110px;
+  background-color: linen;
+  border: solid black;
+  margin: 5px;
 }
 
 .columntwo {
   width: 300px;
   float: right;
-  padding-bottom: 300px;
+  padding-bottom: 10px;
   color: white;
   font-size: 1rem;
+  background-color: linen;
+  border: solid black;
+  margin: 5px;
 }
 
 .columnthree {
