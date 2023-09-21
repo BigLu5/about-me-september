@@ -149,31 +149,37 @@ function showQuiz() {
     // console.log(`It's a simple question...`);
   }
 
-  let numberGuess = 8;
-  let maxAttempts = 4;
-  // initialisation; condition; increment
-  for (let i = 1; i <= maxAttempts; i++) {
-    let userGuess = prompt(
-      "I'm thinking of a number between 1 and 10, take a guess"
-    );
-    console.log(userGuess);
-    if (parseInt(userGuess) === numberGuess) {
-      // parseInt(userGuess) converts a string to an integer
-      alert(`Congratulations! you guessed the correct number: ${numberGuess}.`);
-      break; // break will stop the loop if correct answer is guessed
-    } else if (userGuess < numberGuess) {
-      alert("Too low. Try again.");
-    } else {
-      alert("Too high. Try again.");
-    }
-
-    // check if the user has used their maximum attempts
-    if (i === maxAttempts) {
-      alert(
-        `Sorry, you've used all your attempts. The correct number was ${numberGuess}.`
+  function numberQuestion() {
+    let numberGuess = 8;
+    let maxAttempts = 4;
+    // initialisation; condition; increment
+    for (let i = 1; i <= maxAttempts; i++) {
+      let userGuess = prompt(
+        "I'm thinking of a number between 1 and 10, take a guess"
       );
+      console.log(userGuess);
+      if (parseInt(userGuess) === numberGuess) {
+        // parseInt(userGuess) converts a string to an integer
+        alert(
+          `Congratulations! you guessed the correct number: ${numberGuess}.`
+        );
+        break; // break will stop the loop if correct answer is guessed
+      } else if (userGuess < numberGuess) {
+        alert("Too low. Try again.");
+      } else {
+        alert("Too high. Try again.");
+      }
+
+      // check if the user has used their maximum attempts
+      if (i === maxAttempts) {
+        alert(
+          `Sorry, you've used all your attempts. The correct number was ${numberGuess}.`
+        );
+      }
     }
   }
+
+  numberQuestion();
 
   // i = 1 sets a variable before the loop starts. i effectively represents an 'attempt' from the user?
   // i <= maxAttempts defines the condition for the loop to run (i is less than or equal to 4).
