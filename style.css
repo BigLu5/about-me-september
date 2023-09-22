@@ -15,11 +15,15 @@ body {
 }
 
 #topright {
-  height: 200px;
-  width: 200px;
-  border: 2px solid #fff;
-  border-radius: 50%;
+  height: 300px;
+  width: 250px;
+  border: 2px solid #383d42;
   margin-top: 60px;
+}
+
+#imgandtxt {
+  display: flex;
+  gap: 40px;
 }
 
 .columnone {
