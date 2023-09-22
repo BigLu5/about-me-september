@@ -56,13 +56,14 @@ body {
   margin-left: 50px;
   font-family: 1rem;
   color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-left: solid black;
+  background-color: linen;
 }
 
 #top-links {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 45px;
+  right: 35px;
   list-style: none;
 }
 
