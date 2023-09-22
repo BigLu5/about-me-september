@@ -14,6 +14,10 @@ body {
   display: none;
 }
 
+#start-quiz-button {
+  margin-left: 490px;
+}
+
 #topright {
   height: 300px;
   width: 250px;
