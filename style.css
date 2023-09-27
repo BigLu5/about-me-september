@@ -15,7 +15,7 @@ body {
 }
 
 #start-quiz-button {
-  margin-left: 490px;
+  margin-left: 700px;
 }
 
 #topright {
@@ -23,11 +23,14 @@ body {
   width: 250px;
   border: 2px solid #383d42;
   margin-top: 60px;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 #imgandtxt {
   display: flex;
-  gap: 40px;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .columnone {
